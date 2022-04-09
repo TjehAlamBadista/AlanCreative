@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/img_produk"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@color/biruAlan"/>
+
+        <TextView
+            android:id="@+id/tv_nama_produk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:maxLines="2"
+            android:padding="8dp"
+            android:text="badista"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/tv_harga_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 000"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textColor="@color/biruAlan"
+            android:maxLines="1"
+            android:fontFamily="@font/lato"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="Order"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
